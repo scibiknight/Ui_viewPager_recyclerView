@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp">
+
+    <ImageButton
+        android:id="@+id/news1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/news1"></ImageButton>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@+id/news1">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/person" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_view"
+            android:text="At least 28 people killed in rains, floods in Kerala"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/image_view"
+            android:text="At least 28 people have been killed so far in rain-related incidents in Kerala and more than 22,000 people have been moved to 315 flood relief camps across the state as of Friday morning."
+            android:textSize="15sp"></TextView>
+
+
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/news2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="310dp"
+        android:layout_toEndOf="@+id/text2"
+        android:src="@drawable/news2"></ImageButton>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="500dp"
+        android:layout_below="@+id/news2">
+
+        <ImageView
+            android:id="@+id/image_view2"
+            android:layout_width="50dp"
+            android:layout_height="200dp"
+            android:padding="4dp"
+            app:srcCompat="@drawable/person" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_view2"
+            android:text="SIT formed by Kerala police to probe air crash"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text3"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/image_view2"
+            android:text="The Kerala police on Sunday constituted a Special Investigation Team to probe the Air India Express crash at nearby Karipur international airport on 18 passengers, including the pilot and co-pilot."
+            android:textSize="15sp"></TextView>
+
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

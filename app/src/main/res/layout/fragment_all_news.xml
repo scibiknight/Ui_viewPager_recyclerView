@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".all_news">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/news1"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:src="@drawable/news1"></ImageButton>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/news1"
+                    android:layout_marginTop="140dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/person" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image_view"
+                        android:text="At least 28 people killed in rains, floods in Kerala"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+                    <RatingBar
+                        style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginBottom="21dp"
+                        android:accessibilityPaneTitle="Rating"
+                        android:progressTint="#151515"
+                        android:rating="5" />
+
+
+                </RelativeLayout>
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/all1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="230dp"
+
+                    app:itemBackground="@color/colorWhite"
+                    app:itemIconTint="@color/black"
+                    app:itemTextColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text2"
+                    app:menu="@menu/actionmenu"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageButton
+                    android:id="@+id/news2"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="260dp"
+                    android:layout_toEndOf="@+id/all1"
+                    android:src="@drawable/news2"></ImageButton>
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/news2"
+                    android:layout_marginTop="390dp"
+                    android:background="@color/colorWhite">
+
+                    <ImageView
+                        android:id="@+id/image_view2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="4dp"
+                        app:srcCompat="@drawable/person" />
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/image_view2"
+                        android:text="SIT formed by Kerala police to probe air crash"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="55dp"
+                        android:layout_marginBottom="18dp"
+                        android:progressTint="#191717"
+                        android:rating="4" />
+
+
+
+
+
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/news1"
+                    android:layout_below="@+id/rl2"
+
+                    ></ImageView>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/all2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="490dp"
+
+        app:itemBackground="@color/colorWhite"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        app:menu="@menu/actionmenu"
+        tools:ignore="MissingConstraints" />
+</FrameLayout>

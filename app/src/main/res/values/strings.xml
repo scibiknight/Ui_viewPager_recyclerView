@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">demo3</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nav_home">Home</string>
+    <string name="Nav_Alert">Alert</string>
+    <string name="nav_notification">Notifi</string>
+    <string name="nav_add_location">add_location</string>
+    <string name="nav_locate">Add location</string>
+    <string name="view">nav_view</string>
+    <string name="comments">act</string>
+    <string name="Flag">Actionflag</string>
+    <string name="forward">Actionforward</string>
+</resources>

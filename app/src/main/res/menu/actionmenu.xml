@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/view"
+        android:icon="@drawable/view"
+        android:title="view" />
+    <item
+        android:id="@+id/comments"
+        android:icon="@drawable/comments"
+        android:title="comments" />
+    <item
+        android:id="@+id/flag"
+        android:icon="@drawable/flag"
+        android:title="Flag" />
+    <item
+        android:id="@+id/forward"
+
+        android:icon="?attr/actionModeShareDrawable"
+        android:title="forward" />
+</menu>
